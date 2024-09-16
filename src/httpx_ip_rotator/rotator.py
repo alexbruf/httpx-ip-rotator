@@ -289,7 +289,7 @@ class Rotator:
                 # Get random endpoint
         endpoint = choice(self.endpoints)
         # Replace URL with our endpoint
-        request.url = httpx.URL("https://" + endpoint + "/ProxyStage/" + request.url.path)
+        request.url = httpx.URL("https://" + endpoint + "/ProxyStage" + request.url.path)
         # Replace host with endpoint host
         request.headers["Host"] = endpoint
         # Auto generate random X-Forwarded-For if doesn't exist.
