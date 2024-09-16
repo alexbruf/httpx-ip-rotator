@@ -2,7 +2,7 @@ import httpx
 from httpx_ip_rotator.rotator import DEFAULT_REGIONS, Rotator
 
 
-class ApiGatewayTransport(httpx.BaseTransport):
+class ApiGatewayTransport(httpx.HTTPTransport):
     """
     A transport that routes requests through AWS API Gateway.
     """
