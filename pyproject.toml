@@ -1,0 +1,39 @@
+[project]
+name = "httpx-ip-rotator"
+version = "0.1.0"
+description = "Rotate through IPs in Python with HTTPX using AWS API Gateway."
+authors = [
+    { name = "Alex Brufsky", email = "alex@brufsky.org" }
+]
+license = {file = "LICENSE"}
+dependencies = [
+    "httpx>=0.27.2",
+    "boto3>=1.35.20",
+    "botocore>=1.35.20",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/httpx_ip_rotator"]
+
+
+[project.urls]
+Homepage = "https://github.com/alexbruf/httpx-ip-rotator"
+Issues = "https://github.com/alexbruf/httpx-ip-rotator/issues"
