@@ -31,4 +31,4 @@ jobs:
       - name: build
         run: rye build --clean
       - name: publish package
-        run: rye publish --token ${{ secrets.PYPI_API_TOKEN }} --yes
+        run: rye publish --token ${{ secrets.PYPI_API_TOKEN }} --yes --skip-existing
