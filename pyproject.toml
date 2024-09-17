@@ -1,6 +1,6 @@
 [project]
 name = "httpx-ip-rotator"
-version = "0.1.3"
+version = "0.1.4"
 description = "Rotate through IPs in Python with HTTPX using AWS API Gateway."
 authors = [
     { name = "Alex Brufsky", email = "alex@brufsky.org" }
